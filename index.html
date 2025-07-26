@@ -11,7 +11,7 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Instagram</title>
 </head>
 
 <body>
@@ -23,7 +23,45 @@
                 Instagram
             </a>
             <div class="dropdown  gap-2">
-                <button type="button" class="btn btn-success">Made a new post</button>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Create a new post
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Caption:</p>
+                                <nav class="navbar navbar-light bg-light">
+                                    <form class="container-fluid">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control"
+                                                placeholder="Add the caption of your post here" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </form>
+                                </nav>
+                                <div class="d-grid gap-2 d-md-block">
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="fa-solid fa-gear"></i>
+                                    </button>
+                                    <button class="btn btn-secondary" type="button">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <i class="fa-solid fa-gear"></i>
@@ -40,18 +78,113 @@
     <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-border-all"></i></button>
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fa-solid fa-border-all"></i></button>
         </li>
         <li class="nav-item" role="presentation">
             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-            tabindex="0">...</div>
-        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+            tabindex="0">
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://fastly.picsum.photos/id/58/1280/853.jpg?hmac=YO3QnOm9TpyM5DqsJjoM4CHg8oIq4cMWLpd9ALoP908"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://fastly.picsum.photos/id/63/5000/2813.jpg?hmac=HvaeSK6WT-G9bYF_CyB2m1ARQirL8UMnygdU9W6PDvM"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://fastly.picsum.photos/id/70/3011/2000.jpg?hmac=-npCfe1kpGYW7HcBlZvrEZ9Qb_EdiGLbDxE26amgotM"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <br>
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://i.pinimg.com/236x/0f/29/e7/0f29e7dc3856269afd844d361e033f95.jpg" height="400px"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmFuZG9tfGVufDB8fDB8fHww"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://fastly.picsum.photos/id/82/1500/997.jpg?hmac=VcdCqu9YiLpbCtr8YowUCSUD3-245TGekiXmtiMXotw"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <br>
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://fastly.picsum.photos/id/77/1631/1102.jpg?hmac=sg0ArFCRjP1wlUg8vszg5RFfGiXZJkWEtqLLCRraeBw"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://fastly.picsum.photos/id/80/3888/2592.jpg?hmac=zD95NwXZ7mGAMj-z4444Elf43I4HJvd7Afm2tloweLw"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://fastly.picsum.photos/id/88/1280/1707.jpg?hmac=NnkwPVDBTVxHkc4rALB_fyu-OHY2usdm7iRk5El7JC4"
+                        height="400px" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="card border-secondary mb-3" style="max-width: 40rem;">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <div>Vacaciones en la costa</div>
+                        <div>3/23</div>
+                    </div>
+                </div>
+                <img src="https://fastly.picsum.photos/id/37/2000/1333.jpg?hmac=vpYLNsQZwU2szsZc4Uo17cW786vR0GEUVq4icaKopQI"
+                    alt="">
+                <h5 class="card-title">543 likes</h5>
+                <p class="card-text">Nada como la brisa del mar, el sonido de las olas y una vista que calma el alma. A
+                    veces,
+                    lo único que necesitamos es un momento frente al océano para volver a conectar :blue_heart::herb:
+                    #VistaAlMar #PazInterior #Naturaleza #EscapePerfecto #MarYTranquilidad</p>
+            </div>
+            <br>
+            <div class="card border-secondary mb-3" style="max-width: 40rem;">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <div>Salida con amigos</div>
+                        <div>6/21</div>
+                    </div>
+                </div>
+                <img src="https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g"
+                    alt="">
+                <h5 class="card-title">543 likes</h5>
+                <p class="card-text">Un café, una buena charla y el tiempo se detiene
+                    A veces, lo mejor del día es simplemente esto: una mesa de madera, dos tazas y ninguna prisa.
+                    #CoffeeTime #CaféConEncanto #PausaPerfecta #MomentoDeDos #SimplementeCafé
+                <p>
+            </div>
+            <br>
+            <div class="card border-secondary mb-3" style="max-width: 40rem;">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between">
+                        <div>Un viaje inolvidable</div>
+                        <div>12/23</div>
+                    </div>
+                </div>
+                <img src="https://fastly.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU"
+                    alt="">
+                <h5 class="card-title">432 likes</h5>
+                <p class="card-text">Casitas blancas, mar infinito y un pedacito de cielo llamado Grecia
+                    Santorini, eres una postal que cobra vida en cada rincón
+                    #SantoriniVibes #SueñoGriego #Mediterráneo #TravelGoals #GreciaMágic</p>
+            </div>
+        </div>
     </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
